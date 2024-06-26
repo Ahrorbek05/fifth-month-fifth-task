@@ -15,6 +15,15 @@ const button1 = document.querySelector('.header button');
 const button2 = document.querySelector('button');
 const third = document.querySelector('.light-third-img img');
 const third1 = document.querySelector('.dark-third-img img');
+const lang = document.getElementById('select');
+const uzbek = document.getElementById('select');
+const buttonLang = document.querySelectorAll('.languages button');
+const buttonLang1 = document.querySelector('.languages button:nth-child(1)');
+const buttonLang2 = document.querySelector('.languages button:nth-child(2)');
+const buttonLang3 = document.querySelector('.languages button:nth-child(3)');
+const mode1 = document.querySelector('h3');
+const mode2 = document.querySelector('#mode-class');
+const hero = document.querySelector('.light-text button');
 check.addEventListener('click', function () {
     dark.style.backgroundColor = 'rgba(244, 244, 245, 1)';
     darkText.style.display = 'none';
@@ -34,7 +43,7 @@ check.addEventListener('click', function () {
     button1.style.display = 'block';
 });
 
-button1.addEventListener('click', function () {
+button1.addEventListener('click',  function () {
     button2.style.display = 'block';
     dark.style.backgroundColor = 'rgba(244, 244, 245, 1)';
     darkText.style.display = 'block';
@@ -53,4 +62,19 @@ button1.addEventListener('click', function () {
     button1.style.display = 'none';
     third.style.display = 'none';
     third1.style.display = 'block';
+});
+buttonLang1.addEventListener('click', function () {
+    text.textContent = 'Figma bilan ijodkorlik kuchini oching!';
+    text1.textContent = "Dizayn o'yiningizni oshirishga tayyormisiz?";
+    hero.textContent = "Sinab ko'ring";
+    mode1.textContent = 'Yorqin rejim';
+    mode2.textContent = 'Tungi rejim';
+});
+
+buttonLang3.addEventListener('click', function () {
+    text.textContent = 'Раскройте силу творчества с Figma!';
+    text1.textContent = "Готовы улучшить свою дизайнерскую игру?";
+    hero.textContent = "Попробуйте";
+    mode1.textContent = 'яркий режим';
+    mode2.textContent = 'ночной режим'
 });

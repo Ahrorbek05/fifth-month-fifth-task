@@ -458,3 +458,38 @@ content: '';
 .btns:hover{
     padding-right: 50px;
 }
+
+.languages{
+    /* display: none; */
+    gap: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages__container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+
+.languages button{
+    border: none;
+    border:  1px solid #ababab;
+    font-size: 28px;
+    font-family: system-ui;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 20px 60px;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.languages button:hover{
+    background-color: #0000ff;
+    color: #fff;
+}
+
